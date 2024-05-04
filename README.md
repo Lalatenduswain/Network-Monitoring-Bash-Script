@@ -20,3 +20,38 @@ To clone this repository, run the following command:
 
 ```bash
 git clone https://github.com/Lalatenduswain/Network-Monitoring-Bash-Script.git
+```
+
+### Running the Script
+
+1. Navigate to the directory where the script is located:
+
+```bash
+cd Network-Monitoring-Bash-Script
+```
+
+2. Make the script executable:
+
+```bash
+chmod +x ping.sh
+```
+
+3. Execute the script:
+
+```bash
+./ping.sh
+```
+
+### Configuring Cron Job
+
+To automate the execution of the script at regular intervals, you can set up a cron job on your system. Open the crontab configuration by running `crontab -e` and add a line to schedule the script execution. For example, to run the script every 5 minutes, you can add the following line:
+
+```
+*/5 * * * * /path/to/ping.sh
+```
+
+Replace `/path/to/ping.sh` with the actual path to your script.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
